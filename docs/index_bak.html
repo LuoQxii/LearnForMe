@@ -3,25 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <title>学习至上！</title>
-
-    <!-- 新增：动态环境判断代码 -->
-  <script>
-    const env = (() => {
-      if (window.location.hostname === 'localhost') return 'local';
-      if (window.location.hostname.includes('github.io')) return 'github';
-      return 'prod';
-    })();
-
-    const baseMap = {
-      local: '/',
-      github: '/LearnForMe/',
-      prod: '/docs/'
-    };
-
-    const base = document.createElement('base');
-    base.href = baseMap[env];
-    document.head.appendChild(base);
-  </script>
+  <base href="/LearnForMe/"> <!-- 替换为你的仓库名 -->
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify/lib/themes/vue.css">
 </head>
