@@ -1,3 +1,6 @@
+<!-- 隐藏主标题，但保留层级结构 -->  
+<div style="display: none;"># SQLite3</div>
+
 SQLite 是一种嵌入式数据库，部署相对简单，因为它不需要独立的服务器进程，而是直接访问存储在磁盘上的数据库文件。
 
 ### 1. Windows下载 SQLite3

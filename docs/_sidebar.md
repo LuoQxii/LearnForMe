@@ -9,7 +9,7 @@
 * 操作系统
 
   * [Linux](os/linux/Linux.md)
-  * [Windows](os\\windows/windows.md)
+  * [Windows](os/windows/windows.md)
 
 * 奇奇怪怪
 
