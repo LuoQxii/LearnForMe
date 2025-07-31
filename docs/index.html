@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <title>学习至上！</title>
 
-    <!-- 新增：动态环境判断代码 -->
+  <!-- 动态环境判断 -->
   <script>
     const env = (() => {
       if (window.location.hostname === 'localhost') return 'local';
@@ -22,30 +22,98 @@
     base.href = baseMap[env];
     document.head.appendChild(base);
   </script>
+  
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify/lib/themes/vue.css">
+  
+  <!-- 新增：Mermaid 样式 -->
+  <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/mermaid/dist/mermaid.min.css">
+  
+  <!-- 新增：自定义样式 -->
+  <style>
+    /* 侧边栏分类标题样式 */
+    .sidebar-heading {
+      color: #3eaf7c;
+      font-weight: bold;
+      margin-top: 10px;
+    }
+    
+    /* 代码块复制按钮样式优化 */
+    .copy-btn {
+      opacity: 0.7;
+      transition: opacity 0.2s;
+    }
+    .copy-btn:hover {
+      opacity: 1;
+    }
+    
+    /* 表格行高亮 */
+    table tr:nth-child(even) {
+      background-color: #f8f8f8;
+    }
+    table th {
+      background-color: #e8e8e8;
+    }
+  </style>
 </head>
 <body>
   <div id="app"></div>
+  
   <script>
     window.$docsify = {
       name: '今天学点什么呢？',
       repo: 'https://github.com/LuoQxii/LearnForMe',
-      loadSidebar: true,  // 启用侧边栏
-      loadNavbar: true,   // 启用导航栏
-      subMaxLevel: 3,     // 侧边栏层级
-      themeColor: '#3eaf7c', // 主题色
-      // 搜索插件配置
+      loadSidebar: true,
+      loadNavbar: true,
+      subMaxLevel: 3,
+      themeColor: '#3eaf7c',
+      
+      // 侧边栏折叠配置
+      sidebarDisplayLevel: 0,
+      
+      // 高级搜索配置
       search: {
-        placeholder: '搜索...',
+        placeholder: '🔍 搜索关键词...',
         noData: '未找到结果'
-      }
+      },
+      
+      // 代码复制插件配置
+      copyCode: {
+        buttonText: '复制代码',
+        errorText: '错误',
+        successText: '已复制'
+      },
+      
+      // 插件配置
+      plugins: [
+        // 初始化 Mermaid
+        function(hook) {
+          hook.ready(function() {
+            mermaid.initialize({
+              startOnLoad: true,
+              theme: 'default'
+            });
+          });
+        }
+      ]
     }
   </script>
+  
+  <!-- 核心 JS -->
   <script src="//cdn.jsdelivr.net/npm/docsify/lib/docsify.min.js"></script>
-  <script src="//cdn.jsdelivr.net/npm/docsify/lib/plugins/search.min.js"></script>
-  <script src="//cdn.jsdelivr.net/npm/docsify/lib/plugins/emoji.min.js"></script>
+  
+  <!-- 插件列表 -->
+  <script src="//cdn.jsdelivr.net/npm/docsify/lib/plugins/search.min.js"></script>  <!-- 搜索 -->
+  <script src="//cdn.jsdelivr.net/npm/docsify-copy-code@2/dist/docsify-copy-code.min.js"></script>  <!-- 代码复制 -->
+  <script src="//cdn.jsdelivr.net/npm/docsify/lib/plugins/emoji.min.js"></script>  <!-- 表情支持 -->
+  
+  <!-- 代码高亮 -->
   <script src="//cdn.jsdelivr.net/npm/prismjs/components/prism-bash.min.js"></script>
   <script src="//cdn.jsdelivr.net/npm/prismjs/components/prism-javascript.min.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/prismjs/components/prism-sql.min.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/prismjs/components/prism-plsql.min.js"></script>
+  
+  <!-- Mermaid 流程图 -->
+  <script src="//cdn.jsdelivr.net/npm/mermaid/dist/mermaid.min.js"></script>
 </body>
 </html>
