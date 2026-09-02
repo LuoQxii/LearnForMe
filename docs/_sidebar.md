@@ -1,26 +1,55 @@
-* 数据库
 
-  * [MySQL](db/mysql/Mysql.md)
-  * [Oracle](db/oracle/oracle.md)
-  * [Sql Server](db/sqlserver/sqlserver.md)
-  * [Sqlite3](db/sqlite3/sqlite3.md)
-  * [备份与恢复](db/backups/backups.md)
+- **基础理论**
+  - [总览](00-基础理论&通用知识/README.md)
+  - [服务器硬件&采购](00-基础理论&通用知识/硬件服务器知识.md)
 
-* 操作系统
+- **数据库**
+    - [总览](01-数据库/README.md)
+    - [备份恢复](01-数据库/BACKUP.md)
+  - Oracle
+    - [总览](01-数据库/Oracle/README.md)
+    - [常用操作](01-数据库/Oracle/常用操作.md)
+    - [排错案例](01-数据库/Oracle/排错案例.md)
+    - [配置参数](01-数据库/Oracle/配置参数.md)
+  - MySQL
+    - [总览](01-数据库/MySQL/README.md)
+    - [常用操作](01-数据库/MySQL/常用操作.md)
+    - [排错案例](01-数据库/MySQL/排错案例.md)
+    - [配置参数](01-数据库/MySQL/配置参数.md)
+  - sqlite3
+    - [总览](01-数据库/sqlite3/README.md)
+    - [常用操作](01-数据库/sqlite3/常用操作.md)
+    - [排错案例](01-数据库/sqlite3/排错案例.md)
+    - [配置参数](01-数据库/sqlite3/配置参数.md)
+  - sqlserver
+    - [总览](01-数据库/sqlserver/README.md)
+    - [常用操作](01-数据库/sqlserver/常用操作.md)
+    - [排错案例](01-数据库/sqlserver/排错案例.md)
+    - [配置参数](01-数据库/sqlserver/配置参数.md)
 
-  * [Linux](os/linux/Linux.md)
-  * [Windows](os/windows/windows.md)
+- **操作系统**
+  - [总览](02-操作系统/README.md)
+  - Linux
+    - [总览](02-操作系统/Linux/README.md)
+    - [常用命令](02-操作系统/Linux/常用命令.md)
+    - [服务运维](02-操作系统/Linux/服务运维.md)
+    - [排错案例](02-操作系统/Linux/排错案例.md)
+  - Windows
+    - [总览](02-操作系统/Windows/README.md)
+    - [常用命令](02-操作系统/Windows/常用命令.md)
+    - [服务运维](02-操作系统/Windows/服务运维.md)
+    - [排错案例](02-操作系统/Windows/排错案例.md)
 
-* 奇奇怪怪
+- **服务部署**
+	- [Docker 搭建教程](03-中间件＆服务部署/docker.md)
+	- [Docsify 搭建教程](03-中间件＆服务部署/docsify.md)
+	- [GitHub 仓库使用指南](03-中间件＆服务部署/github.md)
 
-  * [神奇命令](cmd/cmd.md)
+- **工具软件**
 
-* 工具集
+	- [SQL 工具](04-工具软件/PLSQLDeveloper.md)
 
-  * [日志工具](tools/log/log.md)
-  * [SQL 工具](tools/sql/sql.md)
+- **问题案例库**
 
-* 偷偷学习
-
-  * [金融知识](study/finance/finance.md)
-  * [考研宝典](study/postgraduate/postgraduate.md)
+- **资源收藏**
+	- [网页地址](06-资源收藏/URL.md)

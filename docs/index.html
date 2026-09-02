@@ -68,9 +68,6 @@
       subMaxLevel: 3,
       themeColor: '#3eaf7c',
       
-      // 侧边栏折叠配置
-      sidebarDisplayLevel: 0,
-      
       // 高级搜索配置
       search: {
         placeholder: '🔍 搜索关键词...',
@@ -99,6 +96,7 @@
     }
   </script>
   
+
   <!-- 核心 JS -->
   <script src="//cdn.jsdelivr.net/npm/docsify/lib/docsify.min.js"></script>
   
@@ -107,6 +105,10 @@
   <script src="//cdn.jsdelivr.net/npm/docsify-copy-code@2/dist/docsify-copy-code.min.js"></script>  <!-- 代码复制 -->
   <script src="//cdn.jsdelivr.net/npm/docsify/lib/plugins/emoji.min.js"></script>  <!-- 表情支持 -->
   
+
+<!-- 侧边栏折叠插件 JS，必须放在docsify.min.js之后 -->
+  <script src="//cdn.jsdelivr.net/npm/docsify-sidebar-collapse/dist/docsify-sidebar-collapse.min.js"></script>
+
   <!-- 代码高亮 -->
   <script src="//cdn.jsdelivr.net/npm/prismjs/components/prism-bash.min.js"></script>
   <script src="//cdn.jsdelivr.net/npm/prismjs/components/prism-javascript.min.js"></script>

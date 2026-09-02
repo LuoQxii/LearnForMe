@@ -1,3 +1,17 @@
-# Headline
+# 欢迎来到我的知识库
 
-> An awesome project.
+> 个人整理的技术笔记，有错指正，持续更新中。
+
+## 目录导航
+
+| 分类 | 说明 |
+| :-- | :-- |
+| [**数据库**](db/mysql/mysql.md) | MySQL、Oracle、SQL Server、SQLite3 的常用操作，以及备份与恢复方案 |
+| [**操作系统**](os/linux/Linux.md) | Linux 常用命令（文件传输、压缩解压、网络端口、防火墙等），Windows 实用技巧 |
+| [**工具集**](tools/sql/sql.md) | 开发中常用工具的配置与使用（PL/SQL Developer 等） |
+| [**偷偷学习**](code.md) | 编程入门、Docker 容器技术、金融知识、考研资料 |
+| [**知识库建设**](docsify.md) | 本知识库的搭建教程与维护记录 |
+
+
+
+*使用左侧侧边栏浏览各分类内容，或使用顶部搜索功能快速查找。*
